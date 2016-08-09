@@ -18,13 +18,13 @@ Data Curation: [pandas](http://pandas.pydata.org/)
 pandas DataFrame to arff (for experimenting with [Weka](http://www.cs.waikato.ac.nz/ml/weka/)): [pandas2arff](https://github.com/saurabhnagrecha/Pandas-to-ARFF)  
 Feature Selection and System Building: [scikit-learn](http://scikit-learn.org/stable/)  
 ## Algorithms
-Feature selection was made using ANOVA F-value of features. The 15 Best scoring were kept.  
-Classifier was built using k Nearest Neighbors, with k=1 and Manhattan distance metric. Decision was based simply
- on comparing accuracy rates (calculated with 10-fold cross validation) of different algorithms.  
+Feature selection was made using ANOVA F-values of features. The 15 Best scoring were kept.  
+Classifier was built using k Nearest Neighbors, with k=1 and Manhattan distance metric. Choice of algorithm was based simply
+ on comparing accuracy rates (calculated with 10-fold cross validation) of different techniques.  
  Except from kNN, SVM (linear and rbf kernel), Random Forest, Decision Tree and Naïve Bayes based classifiers were tested. kNN scored highest with an accuracy rate calculated at about 89% with the 15 abovementioned features.  
 ## To do
  1) Extend dataset    
- The used dataset was built with language diversity in mind. Additions could be: varying emotions, single phonems, 'extreme' cases (e.g. too low female, too high male)...  
+ The used dataset was built with spoken language diversity in mind. Additions could be: varying emotions, single phonems, 'extreme' cases (e.g. too low female, too high male)...  
  2) More features  
  Features used were Mel Frequency Cepstral Coefficients(MFCC), Gammatone Feature Cepstral Coefficients(GFCC) and the Fundamental Frequency using the YinFFT algorithm (PitchYinFFT). Those were chosen because they made the most sence among the available, given the used tool. Different libraries/extractors could give provide features.  
  .  
